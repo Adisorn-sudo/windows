@@ -1,13 +1,16 @@
 {
-  "name": "Windows 11 Pro",
+  "name": "Linux Mint XFCE",
   "service": "windows",
   "containerEnv": {
-    "VERSION": "11"
+    "MANUAL": "Y",
+    "VERSION": "https://mirror.freedif.org/LinuxMint/iso/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
+    "CPU_CORES": "4",
+    "RAM_SIZE": "16G"
   },
   "forwardPorts": [8006],
   "portsAttributes": {
     "8006": {
-      "label": "Web",
+      "label": "Linux Mint Web",
       "onAutoForward": "notify"
     }
   },
@@ -15,5 +18,5 @@
     "onAutoForward": "ignore"
   },
   "dockerComposeFile": "codespaces.yml",
-  "initializeCommand": "docker system prune --all --force"
+  "initializeCommand": "docker system prune -f"
 }
