@@ -5,8 +5,8 @@ services:
     environment:
       MANUAL: "Y"
       VERSION: "https://mirror.freedif.org/LinuxMint/iso/stable/22.3/linuxmint-22.3-xfce-64bit.iso"
-      CPU_CORES: "4"
-      RAM_SIZE: "16G"
+      CPU_CORES: "2"
+      RAM_SIZE: "8G"
     ports:
       - "8006:8006"
     devices:
